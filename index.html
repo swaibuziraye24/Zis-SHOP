@@ -257,5 +257,655 @@ git init
 git add .
 git commit -m "phase 3 live system"
 git branch -M main
-git remote add origin YOUR_GITHUB_URL
+git remote add origin YOUR_GITHUB_URL<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Shop Uganda</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+/* TOP BAR */
+.topbar {
+    background: #ff7a00;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    width: 50%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* NAV */
+.nav {
+    background: #1c2b39;
+    color: white;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    background: #111;
+    color: white;
+    padding: 10px;
+}
+
+.sidebar h3 {
+    background: #f4a3a3;
+    padding: 10px;
+    margin: 0;
+}
+
+.sidebar p {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    padding: 10px;
+}
+
+/* HERO */
+.hero {
+    background: #0b0f1a;
+    color: white;
+    padding: 60px 20px;
+    border-radius: 10px;
+}
+
+.hero button {
+    background: #ff7a00;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* ICONS */
+.icons {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* TABS */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tabs button {
+    padding: 8px 12px;
+    border: none;
+    background: #ddd;
+}
+
+.tabs button.active {
+    background: #ff7a00;
+    color: white;
+}
+
+/* PRODUCTS */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.product {
+    background: white;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.price {
+    color: #ff7a00;
+    font-weight: bold;
+}
+
+.order-btn {
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.categories {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.categories button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.categories button.active {
+    background: #e91e63;
+    color: white;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* TOP BAR */
+.topbar {
+    background: #ff9900;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.search {
+    width: 50%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* CATEGORY BAR */
+.categories {
+    display: flex;
+    overflow-x: auto;
+    background: white;
+    padding: 10px;
+    gap: 10px;
+}
+
+.categories button {
+    background: #eee;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.categories button.active {
+    background: #ff9900;
+    color: white;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.product {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.product:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.price {
+    color: #ff9900;
+    font-weight: bold;
+}
+
+.product button {
+    background: #ff9900;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.hero {
+    background: url("beauty.jpg") center/cover;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP -->
+<div class="topbar">
+    <h2>Mobile Shop</h2>
+    <input class="search" placeholder="Search products...">
+    <span>🛒 Cart</span>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+    <a href="#">Apple</a>
+    <a href="#">Samsung</a>
+    <a href="#">Tecno</a>
+    <a href="#">Infinix</a>
+    <a href="#">Huawei</a>
+</div>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h3>Categories</h3>
+        <p>Mobile Phones</p>
+        <p>Accessories</p>
+        <p>Laptops</p>
+        <p>Tablets</p>
+        <p>Sound Systems</p>
+    </div>
+
+    <div class="topbar">
+    <h2>T-Petie</h2>
+    <h2 style="padding:10px;">Top Products</h2>
+
+    <input class="search" placeholder="Search perfumes, bags...">
+
+    <span onclick="toggleCart()" style="cursor:pointer;">
+        🛒 (<span id="cart-count">0</span>)
+    </span>
+</div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <!-- HERO -->
+        <div class="hero">
+            <h1>Premium Accessories</h1>
+            <p>Enhance your device experience</p>
+            <button>Explore</button>
+        </div>
+
+        <!-- ICONS -->
+        <div class="icons">
+            <div class="icon">
+                <img src="phone.jpg">
+                <p>Phones</p>
+            </div>
+
+            <div class="icon">
+                <img src="tv.jpg">
+                <p>TVs</p>
+            </div>
+
+            <div class="icon">
+                <img src="laptop.jpg">
+                <p>Laptops</p>
+            </div>
+
+            <div class="icon">
+                <img src="game.jpg">
+                <p>Gaming</p>
+            </div>
+        </div>
+
+        <!-- TABS -->
+        <div class="tabs">
+            <button class="active">Best Deals</button>
+            <button>UK Used</button>
+            <button>Brand New</button>
+            <button>Trending</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="products">
+
+    <div class="product">
+        <img src="phone.jpg">
+        <h3>Samsung Galaxy A14</h3>
+        <p class="price">UGX 550,000</p>
+        <button class="order-btn" onclick="order('Samsung Galaxy A14')">
+            Order on WhatsApp
+        </button>
+    </div>
+
+    <div class="product">
+        <img src="laptop.jpg">
+        <h3>HP Laptop</h3>
+        <p class="price">UGX 1,200,000</p>
+        <button class="order-btn" onclick="order('HP Laptop')">
+            Order on WhatsApp
+        </button>
+    </div>
+
+    <div class="product">
+        <img src="headphones.jpg">
+        <h3>Wireless Headphones</h3>
+        <p class="price">UGX 120,000</p>
+        <button class="order-btn" onclick="order('Headphones')">
+            Order on WhatsApp
+        </button>
+    </div>
+
+    <div class="product">
+        <img src="tv.jpg">
+        <h3>Smart TV 32"</h3>
+        <p class="price">UGX 800,000</p>
+        <button class="order-btn" onclick="order('Smart TV')">
+            Order on WhatsApp
+        </button>
+    </div>
+
+</div>
+
+<div class="products">
+
+    <div class="product">
+        <img src="perfume.jpg">
+        <h3>Luxury Perfume</h3>
+        <p class="price">UGX 80,000</p>
+        <button onclick="addToCart('Luxury Perfume', 80000)">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product">
+        <img src="cosmetics.jpg">
+        <h3>Makeup Kit</h3>
+        <p class="price">UGX 120,000</p>
+        <button onclick="addToCart('Makeup Kit', 120000)">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product">
+        <img src="bag.jpg">
+        <h3>Ladies Handbag</h3>
+        <p class="price">UGX 95,000</p>
+        <button onclick="addToCart('Ladies Handbag', 95000)">
+            Add to Cart
+        </button>
+    </div>
+
+</div>
+
+<div class="categories">
+    <button onclick="filterProducts('all')" class="active">All</button>
+    <button onclick="filterProducts('perfume')">Perfumes</button>
+    <button onclick="filterProducts('cosmetics')">Cosmetics</button>
+    <button onclick="filterProducts('bags')">Bags</button>
+</div>
+
+<div class="products">
+
+    <div class="product perfume">
+        <img src="perfume.jpg">
+        <h3>Luxury Perfume</h3>
+        <p class="price">UGX 80,000</p>
+        <button onclick="addToCart('Luxury Perfume', 80000)">Add to Cart</button>
+    </div>
+
+    <div class="product cosmetics">
+        <img src="cosmetics.jpg">
+        <h3>Makeup Kit</h3>
+        <p class="price">UGX 120,000</p>
+        <button onclick="addToCart('Makeup Kit', 120000)">Add to Cart</button>
+    </div>
+
+    <div class="product bags">
+        <img src="bag.jpg">
+        <h3>Ladies Handbag</h3>
+        <p class="price">UGX 95,000</p>
+        <button onclick="addToCart('Ladies Handbag', 95000)">Add to Cart</button>
+    </div>
+
+</div>
+
+<script>
+function order(product) {
+    let phone = "256705816160"; // your number
+    let message = "Hello, I want to order " + product;
+
+    let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+
+    window.open(url, "_blank");
+}
+</script>
+<script>
+    <script>
+function filterProducts(category) {
+    let products = document.querySelectorAll(".product");
+    let buttons = document.querySelectorAll(".categories button");
+
+    // remove active class
+    buttons.forEach(btn => btn.classList.remove("active"));
+
+    // add active to clicked button
+    event.target.classList.add("active");
+
+    products.forEach(product => {
+        if (category === "all") {
+            product.style.display = "block";
+        } else {
+            if (product.classList.contains(category)) {
+                product.style.display = "block";
+            } else {
+                product.style.display = "none";
+            }
+        }
+    });
+}
+</script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+// ADD TO CART
+function addToCart(name, price) {
+    let existing = cart.find(item => item.name === name);
+
+    if (existing) {
+        existing.qty += 1;
+    } else {
+        cart.push({name, price, qty: 1});
+    }
+
+    saveCart();
+    updateCart();
+}
+
+// SAVE
+function saveCart() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+// UPDATE CART
+function updateCart() {
+    let cartItems = document.getElementById("cart-items");
+    let cartCount = document.getElementById("cart-count");
+    let cartTotal = document.getElementById("cart-total");
+
+    cartItems.innerHTML = "";
+    let total = 0;
+
+    cart.forEach((item, index) => {
+        let itemTotal = item.price * item.qty;
+        total += itemTotal;
+
+        cartItems.innerHTML += `
+        <div style="margin-bottom:10px;">
+            <strong>${item.name}</strong><br>
+            UGX ${item.price} x ${item.qty} = ${itemTotal}<br>
+
+            <button onclick="changeQty(${index}, 1)">+</button>
+            <button onclick="changeQty(${index}, -1)">-</button>
+            <button onclick="removeItem(${index})">❌</button>
+        </div>
+        `;
+    });
+
+    cartCount.innerText = cart.length;
+    cartTotal.innerText = total;
+}
+
+// CHANGE QUANTITY
+function changeQty(index, change) {
+    cart[index].qty += change;
+
+    if (cart[index].qty <= 0) {
+        cart.splice(index, 1);
+    }
+
+    saveCart();
+    updateCart();
+}
+
+// REMOVE
+function removeItem(index) {
+    cart.splice(index, 1);
+    saveCart();
+    updateCart();
+}
+
+// TOGGLE CART
+function toggleCart() {
+    let box = document.getElementById("cart-box");
+    box.style.display = box.style.display === "block" ? "none" : "block";
+}
+
+// CHECKOUT (WHATSAPP)
+function checkout() {
+    if (cart.length === 0) {
+        alert("Cart is empty!");
+        return;
+    }
+
+    let phone = "256XXXXXXXXX"; // PUT CLIENT NUMBER
+    let message = "Hello T-Petie Beauty, I want to order:\n";
+
+    let total = 0;
+
+    cart.forEach(item => {
+        let itemTotal = item.price * item.qty;
+        total += itemTotal;
+
+        message += `- ${item.name} x${item.qty} (UGX ${itemTotal})\n`;
+    });
+
+    message += `\nTotal: UGX ${total}`;
+
+    let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+    window.open(url, "_blank");
+}
+
+// LOAD
+updateCart();
+</script>
+
+<button onclick="checkout()" style="
+background:#25D366;
+color:white;
+padding:10px;
+border:none;
+width:100%;
+margin-top:10px;
+border-radius:5px;
+">
+Checkout on WhatsApp
+</button>
+</script>
+</script>
+
+<span onclick="toggleCart()" style="cursor:pointer;">
+🛒 Cart (<span id="cart-count">0</span>)
+</span>
+
+<button onclick="addToCart('Samsung Galaxy A14', 550000)">
+Add to Cart
+</button>
+
+<div id="cart-box" style="
+position: fixed;
+right: 0;
+top: 0;
+width: 300px;
+height: 100%;
+background: white;
+box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+padding: 15px;
+display: none;
+overflow-y: auto;
+">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <h3>Total: UGX <span id="cart-total">0</span></h3>
+</div>
+
+</body>
+</html>
 git push -u origin main
+
